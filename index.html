@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SEO -->
+		<title>bavy engine</title>
+		<meta
+			name="description"
+			content="bavy is a refreshingestly simple hack-driven gaem engine built in rüst"
+		/>
+		<meta
+			name="keywords"
+			content="bavy, game engine, rust, hack-driven, simple, refreshing"
+		/>
+
+		<!-- Open Graph (Facebook) -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://bavy.org" />
+		<meta property="og:site_name" content="bavy engine" />
+		<meta property="og:title" content="bavy engine" />
+		<meta
+			property="og:description"
+			content="bavy is a refreshingestly simple hack-driven gaem engine built in rüst"
+		/>
+		<meta property="og:image" content="./static/bavy_cover.png" />
+		<meta property="og:image:alt" content="bavy cover image" />
+
+		<!-- X (Twitter) -->
+		<meta name="twitter:url" content="https://bavy.org" />
+		<meta name="twitter:title" content="bavy engine" />
+		<meta
+			name="twitter:description"
+			content="bavy is a refreshingestly simple hack-driven gaem engine built in rüst"
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content="./static/bavy_cover.png" />
+		<meta name="twitter:image:alt" content="bavy cover image" />
+
+		<!-- fonts -->
+		<link
+			rel="preload"
+			href="./static/Shantell_Sans/ShantellSans-VariableFont_BNCE,INFM,SPAC,wght.ttf"
+			as="font"
+			type="font/ttf"
+			crossorigin="anonymous"
+		/>
+
+		<!-- icons and manifest -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./static/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./static/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./static/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./static/site.webmanifest" />
+		<link rel="theme-color" content="#ececec" />
+	</head>
+
+	<body>
+		<main>
+			<section class="bavy-landing">
+				<div class="content-container">
+					<img
+						src="./static/bavy_logo_light.svg"
+						alt="bavy logo"
+						width="480"
+						height="165"
+						fetchpriority="high"
+					/>
+					<p>
+						welcom to teh (unofficial) home of bavy,<br />
+						the refreshingestly simple hack-driven gaem engine built in rüst
+					</p>
+				</div>
+			</section>
+
+			<section class="cool-cousin">
+				<div class="content-container">
+					<h2>bavy's cool cousin</h2>
+					<p>
+						bavy has a cousin that soem call "bevy"... bavy tinks they cool :)
+					</p>
+					<a class="bevy-link" href="https://bevy.org">bevy.org</a>
+				</div>
+			</section>
+		</main>
+
+		<a
+			class="bavy-credit"
+			href="https://discord.com/channels/691052431525675048/695741366520512563/742832703761809409"
+			>original bavy art by PostRobcore</a
+		>
+	</body>
+</html>
+
+<style>
+	/* fonts */
+
+	@font-face {
+		font-family: "Shantell Sans";
+		src: url("./static/Shantell_Sans/ShantellSans-VariableFont_BNCE,INFM,SPAC,wght.ttf")
+			format("truetype");
+		font-weight: 1 1000;
+		font-style: normal italic;
+		font-display: block;
+	}
+
+	/* general styles */
+
+	:root {
+		--bg: #ececec;
+		--light: #d0d0d0;
+		--dark: #333;
+	}
+
+	body {
+		margin: 0;
+		background-color: var(--bg);
+		color: var(--dark);
+		font-family: "Shantell Sans", "Comics Sans MS", cursive, sans-serif;
+		font-size: 1.4em;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100vh;
+	}
+
+	.content-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50rem;
+		max-width: 90%;
+	}
+
+	img {
+		width: 30rem;
+		max-width: 90%;
+	}
+
+	p {
+		font-weight: 600;
+		text-align: center;
+	}
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-align: center;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 800;
+		margin: 0;
+	}
+
+	@media (max-width: 850px) {
+		body {
+			font-size: 1.1em;
+		}
+	}
+
+	@media (max-width: 500px) {
+		body {
+			font-size: 1em;
+		}
+	}
+
+	/* specific styles */
+
+	.cool-cousin {
+		background-color: var(--dark);
+		color: var(--light);
+	}
+
+	a.bevy-link {
+		display: inline-block;
+		margin: 10px auto 0 auto;
+		padding: 10px 20px;
+		background-color: var(--dark);
+		color: var(--light);
+		text-decoration: none;
+		font-weight: 600;
+		border: 4px solid var(--light);
+		border-radius: 0.8rem;
+
+		transition: all 0.2s ease-in-out;
+	}
+
+	a.bevy-link:hover {
+		background-color: var(--light);
+		color: var(--dark);
+		border-color: var(--dark);
+		transform: scale(1.1);
+		font-weight: 800;
+	}
+
+	a.bavy-credit {
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		font-size: 0.8em;
+		color: #666;
+		text-decoration: none;
+	}
+
+	a.bavy-credit:hover {
+		text-decoration: underline;
+	}
+
+	::selection {
+		background-color: #666;
+		color: #eee;
+	}
+</style>

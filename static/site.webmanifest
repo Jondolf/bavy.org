@@ -1,0 +1,37 @@
+{
+	"name": "bavy engine",
+	"short_name": "bavy",
+	"description": "the refreshingestly simple hack-driven gaem engine built in rüst",
+	"icons": [
+		{
+			"src": "./android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": [
+		{
+			"src": "./screenshot-1920x1080.png",
+			"sizes": "1920x1080",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "bavy engine landing page"
+		},
+		{
+			"src": "./screenshot-1024x1366.png",
+			"sizes": "1024x1366",
+			"type": "image/png",
+			"label": "bavy engine landing page"
+		}
+	],
+	"id": "/",
+	"start_url": "/",
+	"theme_color": "#ececec",
+	"background_color": "#ececec",
+	"display": "standalone"
+}
